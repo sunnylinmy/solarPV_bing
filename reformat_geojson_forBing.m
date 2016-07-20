@@ -28,7 +28,7 @@ for i = 1:length(coordinates)
    else
        jsonmesh3_add = struct('type','Polygon','coordinates',{coordinates(i)});
    end
-    jsonmesh3_add2 = struct('type','Feature','properties',struct('name','Solar PV'),'geometry',jsonmesh3_add);
+    jsonmesh3_add2 = struct('type','Feature','properties',struct('name',' '),'geometry',jsonmesh3_add);
     jsonmesh3 = [jsonmesh3;jsonmesh3_add2];
 end
 
